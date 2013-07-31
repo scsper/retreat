@@ -1,0 +1,28 @@
+.centered{
+	text-align:center;
+	margin: 300px 0px 10px;
+}
+
+body{
+	 /* fallback */
+  background-color: #1a82f7;
+  background-image:url(assets/greybackground.jpg);
+  background-repeat: repeat-y;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#484848), to(#202020));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(left, #202020, #484848 );
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(left, #202020, #484848);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(left, #202020, #484848);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #202020, #484848);
+
+
+}
