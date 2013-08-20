@@ -1,13 +1,13 @@
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
+from django.core.context_processors import csrf # cross site request forgery
 
 from retreat_app.models import Retreat
 
 def index(request):
     return render(request, 'retreat_app/index.html')
-
 
 @login_required
 def retreats(request):
@@ -17,21 +17,22 @@ def retreats(request):
     # pass in the request, location of the template, and the variables the template uses
     return render(request, 'retreat_app/retreat_list.html', context)
 
-def login_view(request):
-    return render(request, 'retreat_app/login.html')
 
-def validate_login(request):
+def login_view(request):
+    context = {}
+    context.update(csrf(request))
+    return render(request, 'retreat_app/login.html', context)
+
+def auth_view(request):
     username = request.POST['username']
     password = request.POST['password']
     user = authenticate(username=username, password=password)
 
     if user is not None:
-        if user.is_active:
-            login(request, user)
-            return HttpResponseRedirect('/r/retreats/') # Redirect to a success page.
+        login(request, user)
+        return HttpResponseRedirect('/retreat/retreats/')
+    else:
+        return HttpResponseRedirect('/accounts/invalid')
 
-        #else:
-            # Return a 'disabled account' error message
-    #else:
-        # Return an 'invalid login' error message
-
+def invalid(request):
+    return render(request, 'retreat_app/invalid.html')
