@@ -9,6 +9,7 @@ from retreat_app.models import Retreat
 def index(request):
     return render(request, 'retreat_app/index.html')
 
+
 @login_required
 def retreats(request):
     retreat_list = Retreat.objects.all()
@@ -18,10 +19,18 @@ def retreats(request):
     return render(request, 'retreat_app/retreat_list.html', context)
 
 
+@login_required
+def retreat_view(request, retreat_id):
+    retreat = Retreat.objects.get(id=retreat_id)
+    context = {'retreat': retreat}
+    return render(request, 'retreat_app/retreat_view.html', context)
+
+
 def login_view(request):
     context = {}
     context.update(csrf(request))
     return render(request, 'retreat_app/login.html', context)
+
 
 def auth_view(request):
     username = request.POST['username']
@@ -33,6 +42,7 @@ def auth_view(request):
         return HttpResponseRedirect('/retreat/retreats/')
     else:
         return HttpResponseRedirect('/accounts/invalid')
+
 
 def invalid(request):
     return render(request, 'retreat_app/invalid.html')

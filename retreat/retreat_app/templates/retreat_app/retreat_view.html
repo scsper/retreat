@@ -1,0 +1,9 @@
+{% if retreat %}
+    <div>{{retreat.name}}</div>
+    <div>{{retreat.start_date}}</div>
+    <div>{{retreat.end_date}}</div>
+    <div>{{retreat.spots}}</div>
+    <div>{{retreat.location}}</div>
+{% else %}
+    <p>No information available for retreat.</p>
+{% endif %}
