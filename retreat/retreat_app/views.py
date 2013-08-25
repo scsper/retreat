@@ -25,6 +25,12 @@ def retreat_view(request, retreat_id):
     context = {'retreat': retreat}
     return render(request, 'retreat_app/retreat_view.html', context)
 
+@login_required
+def roster_view(request, retreat_id):
+    print "ROSTER VIEW!!!!!"
+    context = {}
+    return render(request, 'retreat_app/roster_view.html', context)
+
 
 def login_view(request):
     context = {}

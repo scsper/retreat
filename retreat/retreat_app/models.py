@@ -8,3 +8,8 @@ class Retreat(models.Model):
     end_date = models.DateField()
     spots = models.PositiveSmallIntegerField()
     location = models.CharField(max_length=50)
+
+class Attendee(models.Model):
+    first_name = models.CharField(max_length=20)
+    last_name = models.CharField(max_length=20)
+    retreat = models.ForeignKey(Retreat)

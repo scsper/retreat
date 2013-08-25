@@ -13,7 +13,8 @@ urlpatterns = patterns('',
     # url(r'^accounts/loggedin/$', views.loggedin, name='loggedin'),
     url(r'^accounts/invalid/$', views.invalid, name='invalid'),
 
-    url(r'^retreats/(?P<retreat_id>\d+)/$', views.retreat_view, name="retreat_view")
+    url(r'^retreats/(?P<retreat_id>\d+)/$', views.retreat_view, name="retreat_view"),
+    url(r'^retreats/(?P<retreat_id>\d+)/roster/$', views.roster_view, name="roster_view")
 
 
 )
