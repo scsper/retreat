@@ -5,7 +5,7 @@ Making a site for churches to use to manage their retreats
 
 Setup
 =======
-1) Get [Vagrant](http://www.vagrantup.com/downloads)
+* Get [Vagrant](http://www.vagrantup.com/downloads)
     * You may have to also install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 
