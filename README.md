@@ -1,7 +1,12 @@
 Retreat
 =======
 Making a site for churches to use to manage their retreats
-test edit
+
+
+Setup
+=======
+1) Get Vagrant[http://www.vagrantup.com/downloads]
+
 
 Pages
 =======
