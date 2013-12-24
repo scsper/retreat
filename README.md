@@ -7,6 +7,8 @@ Setup
 =======
 * Get [Vagrant](http://www.vagrantup.com/downloads)
     * You may have to also install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* `$ vagrant up`
+* `$ make install`
 
 
 Pages
