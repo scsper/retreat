@@ -9,8 +9,8 @@ Setup
     * You may have to also install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 In the root directory of the project, type: 
-$ vagrant up
-$ make install
+`vagrant up`
+`make install`
 
 
 Pages
