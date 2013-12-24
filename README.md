@@ -8,9 +8,9 @@ Setup
 * Get [Vagrant](http://www.vagrantup.com/downloads)
     * You may have to also install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
-In the root directory of the project, type: 
-* vagrant up
-* make install
+* In the root directory of the project, type: 
+    * vagrant up
+    * make install
 
 
 Pages
