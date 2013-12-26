@@ -76,9 +76,6 @@ Pages
   - Total sold
   - Templated data -- t-shirts?
 
-- Retreat creation
-  - Start, end, spots (any admin tier), name, location
-
 
 Features
 ==========
