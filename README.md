@@ -1,7 +1,17 @@
 Retreat
 =======
 Making a site for churches to use to manage their retreats
-test edit
+
+
+Setup
+=======
+* Install [Vagrant](http://www.vagrantup.com/downloads)
+* Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+* In the root directory of the project, type: 
+    * vagrant up
+    * make install
+
 
 Pages
 =======
@@ -65,9 +75,6 @@ Pages
   - Total you have
   - Total sold
   - Templated data -- t-shirts?
-
-- Retreat creation
-  - Start, end, spots (any admin tier), name, location
 
 
 Features
