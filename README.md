@@ -46,7 +46,7 @@ Pages
   - Capacity
   - Cost / Price per person
 
-- Check-in View (/retreat/<id>/checkin)
+- Check-in View (/retreat/__id__/checkin)
   - All tiers -- searchable list
     - First name
     - Last name
@@ -57,7 +57,7 @@ Pages
   - Be able to give people stuff
   - Checkout (separate page, based on date)
 
-- Roster View (Summary) (/retreat/<id>/roster)
+- Roster View (Summary) (/retreat/__id__/roster)
   - Name (link)
     - When clicked: room, contact information, emergency info, allergies
   - Check-in status, denoted by a color
@@ -70,7 +70,7 @@ Pages
 - Rooms
   - TBD
 
-- Item Creation / Management (/retreat/<id>/items)
+- Item Creation / Management (/retreat/__id__/items)
   - Inventory mgmt. 
     - Don't worry about accounting for costs (unless people ask for it)
   - Total you started with
