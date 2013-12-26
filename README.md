@@ -11,6 +11,8 @@ Setup
 * In the root directory of the project, type: 
     * vagrant up
     * make install
+    * vagrant ssh
+    * cd /vagrant
 
 
 Pages
