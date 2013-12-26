@@ -31,14 +31,14 @@ Pages
   - Intro / onboarding
     - make it possible to do as much as you can without a signup
 
-- Retreats View
+- Retreats View (/retreats)
   - Retreat name
   - Start date
   - End date
   - Location
   - Total spots available
 
-- Retreat Creation
+- Retreat Creation (/create)
   - Name
   - Start date
   - End date
@@ -46,7 +46,7 @@ Pages
   - Capacity
   - Cost / Price per person
 
-- Check-in View
+- Check-in View (/retreat/<id>/checkin)
   - All tiers -- searchable list
     - First name
     - Last name
@@ -57,7 +57,7 @@ Pages
   - Be able to give people stuff
   - Checkout (separate page, based on date)
 
-- Roster View (Summary)
+- Roster View (Summary) (/retreat/<id>/roster)
   - Name (link)
     - When clicked: room, contact information, emergency info, allergies
   - Check-in status, denoted by a color
@@ -70,7 +70,7 @@ Pages
 - Rooms
   - TBD
 
-- Item Creation / Management
+- Item Creation / Management (/retreat/<id>/items)
   - Inventory mgmt. 
     - Don't worry about accounting for costs (unless people ask for it)
   - Total you started with
