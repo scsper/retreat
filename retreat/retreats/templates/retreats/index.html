@@ -1,0 +1,13 @@
+{% if retreat_list %}
+    {% for retreat in retreat_list %}
+        <div>
+            <a href="/retreats/{{ retreat.id }}/">{{ retreat.name }}</a>
+            <p>Starts: {{ retreat.start_date }}</p>
+            <p>Ends: {{ retreat.end_date }}</p>
+            <p>Location: {{ retreat.location }}</p>
+            <p>Spots: {{ retreat.spots }}</p>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>No retreats are available.</p>
+{% endif %}
