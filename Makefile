@@ -4,3 +4,6 @@ install:
 
 run:
 	python retreat/manage.py runserver [::]:8000
+
+clean:
+	rm *.pyc
